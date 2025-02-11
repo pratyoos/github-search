@@ -16,9 +16,11 @@ export default function GitHubSearch() {
     try {
       const response = await axios.get(`https://api.github.com/users/${username}`);
       setUser(response.data);
-    } catch (err) {
+    } 
+    catch (err) {
       setError("User not found. Please try again.");
-    } finally {
+    } 
+    finally {
       setLoading(false);
     }
   };
