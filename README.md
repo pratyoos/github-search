@@ -1,8 +1,25 @@
-# React + Vite
+# GitHub Profile Search
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple React project for learning API integration by fetching GitHub user profiles.
 
-Currently, two official plugins are available:
+## Features
+- Search for a GitHub user by username
+- Display user details such as avatar, bio, public repos, followers, and following
+- Handles errors for invalid usernames
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## API Integration
+This project fetches data from GitHub's public API:
+```js
+const response = await axios.get(`https://api.github.com/users/${username}`);
+```
+
+## Dependencies
+- React
+- Axios
+- Tailwind CSS
+- Lucide React (for icons)
+
+## Learning Outcome
+- Making API calls in React using `axios`
+- Handling loading states and errors
+- Displaying dynamic data in a React component
