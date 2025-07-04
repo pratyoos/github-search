@@ -1,4 +1,4 @@
-import { Search as SearchIcon } from "lucide-react";
+import { Search } from "lucide-react";
 import { useState } from "react";
 import axios from "axios";
 
@@ -41,7 +41,7 @@ function Search() {
           className="p-2 bg-blue-500 text-white rounded-r hover:bg-blue-600"
           onClick={fetchUser}
         >
-          <SearchIcon size={20} />
+          <Search size={20} />
         </button>
       </div>
 
@@ -58,7 +58,6 @@ function Search() {
           <a
             href={user.html_url}
             target="_blank"
-            rel="noopener noreferrer"
             className="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600"
           >
             View GitHub Profile
