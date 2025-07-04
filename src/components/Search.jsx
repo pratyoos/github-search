@@ -13,7 +13,7 @@ function Search() {
     setLoading(true);
     setError(null);
     setUser(null);
-    const apiUrl = import.meta.env.VITE_API_URL;
+    const apiUrl = 'https://api.github.com/users';
     try {
       const response = await axios.get(`${apiUrl}/${username}`);
       setUser(response.data);
