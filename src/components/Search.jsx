@@ -17,9 +17,11 @@ function Search() {
     try {
       const response = await axios.get(`${apiUrl}/${username}`);
       setUser(response.data);
-    } catch (err) {
+    } 
+    catch (err) {
       setError("User not found. Please try again.");
-    } finally {
+    } 
+    finally {
       setLoading(false);
     }
   };
