@@ -1,11 +1,18 @@
+import { FaGithub } from "react-icons/fa";
+import "../index.css"
+
+
 function Navbar() {
-    return (
-      <nav className="bg-gray-900 text-white p-4 flex justify-center items-center">
-        <h1 className="text-xl font-bold">GitHub Profile Searcher</h1>
+  return (
+    <header className="bg-white shadow-sm">
+      <nav className="container mx-auto px-6 py-4 flex items-center justify-between">
+        <div className="flex items-center space-x-3">
+          <FaGithub className="text-3xl text-black" />
+          <span className="text-xl font-semibold text-gray-800">GitHub Search</span>
+        </div>
       </nav>
-    );
-  }
-  
-  
-  export default Navbar;
-  
+    </header>
+  );
+}
+
+export default Navbar;
