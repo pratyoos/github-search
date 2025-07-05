@@ -23,3 +23,7 @@ const response = await axios.get(`https://api.github.com/users/${username}`);
 - Making API calls in React using `axios`
 - Handling loading states and errors
 - Displaying dynamic data in a React component
+
+## Author
+
+Made with ❤️ by [Pratyoos](https://github.com/pratyoos).
